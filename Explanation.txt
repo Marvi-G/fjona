@@ -1,0 +1,18 @@
+Hello,
+
+As requested on the test I have created one static page 
+where I have followed the tasks by creating 2 sections as instructed
+in the email: 
+
+Link1: https://shero.d.pr/i/9v153Y
+Link2: https://shero.d.pr/i/KcwBqJ
+
+...and another section where I have used Glide.js library
+to create the carousel. Meaning that the header, the footer
+and the testimonials section were not needed for this test
+as instructed in your email.
+
+For each CSS file, JS file and images I have created each 
+a folder for storing the files. I have used placeholders as 
+images as was requested and the site has been designed to be 
+responsive. 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+  </head>
+  <body>
+    <!-- Simple header Here -->
+    <header>
+      <h1>Welcome</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main here -->
+    <main>
+      <!-- Done -->
+      <section class="section first-section">
+        <div>
+          <p class="title-first-section">Add color to your masterpiece</p>
+          <button type="button" class="main-button">Shop Now</button>
+        </div>
+      </section>
+
+      <section class="section flex-box">
+        <div>
+          <img
+            class="respo-image"
+            src="images/placeholde600x400.png"
+            alt="Simple Image 1"
+          />
+          <p class="image-paragraph">Glide</p>
+        </div>
+        <div>
+          <img
+            class="respo-image"
+            src="images/placeholde600x400.png"
+            alt="Simple Image 2"
+          />
+          <p class="image-paragraph">Magnetic core bobbin</p>
+        </div>
+        <div>
+          <img
+            class="respo-image"
+            src="images/placeholde600x400.png"
+            alt="Simple Image 3"
+          />
+          <p class="image-paragraph">Premium stabilizer</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h1 class="text-center featured-h text-uppercase">Featured Products</h1>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img
+                  class="respo-image"
+                  src="images/placeholde600x400.png"
+                  alt="Simple Image 4"
+                />
+                <p class="image-paragraph">EMBROIDERY STABILIZER</p>
+              </li>
+              <li class="glide__slide">
+                <img
+                  class="respo-image"
+                  src="images/placeholde600x400.png"
+                  alt="Simple Image 5"
+                />
+                <p class="image-paragraph">CUBBIE GREY ELEPHANT</p>
+              </li>
+              <li class="glide__slide">
+                <img
+                  class="respo-image"
+                  src="images/placeholde600x400.png"
+                  alt="Simple Image 6"
+                />
+                <p class="image-paragraph">KIMBERBELL CUP OF CHEER</p>
+              </li>
+              <li class="glide__slide">
+                <img
+                  class="respo-image"
+                  src="images/placeholde600x400.png"
+                  alt="Simple Image 7"
+                />
+                <p class="image-paragraph">KIMBERBELL TWO SCOOPS</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer here -->
+    <footer>
+      <p>© 2025 Fjona Kote. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const configuration = {
+        type: "carousel",
+        perView: 4, //This controls how many items to show
+        breakpoints: {
+          900: {
+            perView: 2, //This controls how many items to show when 900px or less in order to  control the responsivity for tablets
+          },
+          720: {
+            perView: 1, //This controls how many items to show when 720px or less in order to  control the responsivity for phones
+          },
+        },
+      };
+      new Glide(".glide", configuration).mount();
+    </script>
+  </body>
+</html>
